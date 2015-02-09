@@ -28,7 +28,9 @@ public class HelloWorld implements Serializable{
 		this.date = date;
 	}
 
-	
+	public String entrar(){
+		return "welcome";
+	}
 	 
 	
 
