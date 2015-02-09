@@ -11,7 +11,17 @@
     <h:body>
     	<h3>JSF 2.0 Hello World Example - hello.xhtml</h3>
     	<h:form>
+    		Nombre:
     	   <h:inputText value="#{helloWorld.nombre}"></h:inputText>
+    	    Fecha nacimiento:
+    	    <h:inputText id="date" value="#{helloWorld.date}" 
+			size="20" required="true"
+			label="Receipt Date" >
+			<!-- validacion de la fecha -->
+			<f:convertDateTime pattern="d-M-yyyy" />
+			
+			</h:inputText>
+			
     	   <h:commandButton value="Welcome Me" action="welcome"></h:commandButton>
     	</h:form>
     </h:body>
